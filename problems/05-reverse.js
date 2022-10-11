@@ -14,9 +14,22 @@ reverse(""); // ""
 
 
 function reverse(str) {
-  // Your code here
-}
+  // debugger
+  // let letters = str.split('')
+  // if(letters.length === 0) return reverse(word);
+  // debugger
 
+  // let first = letters.pop()
+
+  // letters.unshift(first)
+  // let word = letters.join('')
+  //  debugger
+  // return reverse(word)
+  if(str.length === 0) return str
+
+  return reverse(str.slice(1)) + str[0]
+}
+console.log(reverse("house")); // "esuoh"
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
